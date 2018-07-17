@@ -1,0 +1,215 @@
+<import src="../movie-list/movie-list-template.wxml" />
+<view class="user-container">
+  <view class='header'>
+    <view class='avatar'>
+      <image src="{{user.avatar}}"></image>
+    </view>
+    <view class='username'>{{user.name}}</view>
+    <view class='follow'>
+      <text>关注</text>
+    </view>
+  </view>
+  <view class='content'>
+     <!-- <view class='life-item'>
+      <view class='info'>
+        <text class='title'>想看（668）</text>
+        <view class='more' catchtap='onMoreTap' data-category='1'>
+          <text class='more-text'>更多</text>
+          <image class='icon-right' src='/images/right.png'></image>
+        </view>
+      </view>
+      <view class='items'>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='split'></view>
+    <view class='life-item'>
+      <view class='info'>
+        <text class='title'>在看（9）</text>
+        <view class='more' catchtap='onMoreTap' data-category='1'>
+          <text class='more-text'>更多</text>
+          <image class='icon-right' src='/images/right.png'></image>
+        </view>
+      </view>
+      <view class='items'>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='split'></view>
+    <view class='life-item'>
+      <view class='info'>
+        <text class='title'>看过（1568）</text>
+        <view class='more' catchtap='onMoreTap' data-category='1'>
+          <text class='more-text'>更多</text>
+          <image class='icon-right' src='/images/right.png'></image>
+        </view>
+      </view>
+      <view class='items'>
+        <view class='item-movie'>
+          <image src="/images/film/diany1.png" class='img'></image>
+          <view class='name'>
+            <text>环太平洋：雷...</text>
+          </view>
+          <view class='nscore' wx:if='{{item.rating.average===9}}'>暂无评分</view>
+          <view class='star' wx:else>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <image class='star-item' src='/images/star_on.png'></image>
+            <view class='score'>
+              <text>5.8</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='split'></view>  -->
+
+    <view class='comments'>
+      <view class='title'>短评</view>
+      <view class='comment-list'>
+        <view class='comment-item'>
+          <view class='desc'>
+            <image class='avatar-small' src='/images/user/user1.png'></image>
+            <view class='user-info'>
+              <text class='user'>凌睿</text>
+              <view class='star'>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+              </view>
+              <view class='date'>
+                <text>2018-03-23 02:09:37</text>
+              </view>
+            </view>
+          </view>
+          <text class='text'>1景甜电影宇宙第三部，长城打古代怪兽，金刚打近代怪兽，环太打未来怪兽，怪兽做错了什么要被她打？</text>
+        </view>
+        <view class='comment-item'>
+          <view class='desc'>
+            <image class='avatar-small' src='/images/user/user1.png'></image>
+            <view class='user-info'>
+              <text class='user'>凌睿</text>
+              <view class='star'>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+              </view>
+              <view class='date'>
+                <text>2018-03-23 02:09:37</text>
+              </view>
+            </view>
+          </view>
+          <text class='text'>1景甜电影宇宙第三部，长城打古代怪兽，金刚打近代怪兽，环太打未来怪兽，怪兽做错了什么要被她打？</text>
+        </view>
+        <view class='comment-item'>
+          <view class='desc'>
+            <image class='avatar-small' src='/images/user/user1.png'></image>
+            <view class='user-info'>
+              <text class='user'>凌睿</text>
+              <view class='star'>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+                <image src='/images/star_on.png'></image>
+              </view>
+              <view class='date'>
+                <text>2018-03-23 02:09:37</text>
+              </view>
+            </view>
+          </view>
+          <text class='text'>1景甜电影宇宙第三部，长城打古代怪兽，金刚打近代怪兽，环太打未来怪兽，怪兽做错了什么要被她打？</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

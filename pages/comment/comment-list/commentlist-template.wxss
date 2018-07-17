@@ -1,0 +1,49 @@
+@import "../../star/star-template.wxss";
+.comment-item {
+  margin-bottom: 40rpx;
+  font-size: 0;
+}
+
+.desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+
+.user-info {
+  flex-direction: column;
+  vertical-align: top;
+  margin-top: 10rpx;
+}
+
+.author {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #111;
+  margin-right: 10rpx;
+}
+
+.star-container{
+  display: inline-block;
+}
+
+.date {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.text {
+  display: block;
+  margin-left: 79rpx;
+  margin-top: 14rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #494949;
+}

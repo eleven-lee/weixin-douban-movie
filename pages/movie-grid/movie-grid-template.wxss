@@ -1,0 +1,39 @@
+@import "../movie/movie-template.wxss";
+
+.grid-container {
+  height: 100%;
+  padding: 0 36rpx 80rpx;
+  font-size: 0;
+}
+
+.movie-item {
+  width: 205rpx;
+  height: 351rpx;
+  margin-top: 50rpx;
+  margin-right: 30rpx;
+  float: left;
+}
+
+.movie-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.img {
+  width: 205rpx;
+  height: 293rpx;
+  background-color: #333;
+}
+
+.name {
+  width: 100%;
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.star-container {
+  margin-top: 10rpx;
+}

@@ -1,0 +1,22 @@
+
+.nscore {
+  font-size: 20rpx;
+  color: #aaa;
+}
+
+.stars {
+  font-size: 0;
+}
+
+.star-item {
+  width: 16rpx;
+  height: 16rpx;
+  margin-right: 6rpx;
+}
+
+.score {
+  margin-left: 10rpx;
+  font-size: 18rpx;
+  color: #aaa;
+  display: inline-block;
+}

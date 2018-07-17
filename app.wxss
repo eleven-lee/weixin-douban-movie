@@ -1,0 +1,33 @@
+/**app.wxss**/
+@import 'utils/css/reset.wxss';
+
+/* text {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+} */
+
+input {
+  font-family: MicroSoft YaHei;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "MicrosoftYaHei";
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}

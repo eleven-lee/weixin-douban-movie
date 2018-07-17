@@ -1,0 +1,29 @@
+
+@import "../star/star-template.wxss";
+.movie-container {
+  width: 206rpx;
+  height: 351rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+
+.movie-img {
+  width: 206rpx;
+  height: 293rpx;
+  background-color: #333;
+}
+
+.name {
+  width: 100%;
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.star-container{
+  margin-top:10rpx;
+}
+

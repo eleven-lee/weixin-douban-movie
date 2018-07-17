@@ -1,0 +1,15 @@
+<template name='starTemplate'>
+  <view class='star-container'>
+    <view class='nscore' wx:if='{{average===0}}'>暂无评分</view>
+    <view class='stars' wx:else>
+      <block wx:for='{{stars}}' wx:for-item='star' wx:key='id'>
+        <image wx:if='{{star===1}}' class='star-item' src='/images/star_on.png'></image>
+        <image wx:elif='{{star===2}}' class='star-item' src='/images/star_half.png'></image>
+        <image wx:else class='star-item' src='/images/star_off.png'></image>
+      </block>
+      <view class='score'>
+        <text>{{average}}</text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,46 @@
+<import src="../comment/comment-list/commentlist-template.wxml" />
+<import src="../star/star-template.wxml" />
+<view class='container'>
+  <view class='head'>
+    <image class='bg-img' src='{{movie.bimage}}'></image>
+    <image class='film-img' src='{{movie.simage}}'></image>
+    <view class='film-text'>
+      <text class='name'>{{movie.title}}</text>
+      <view class='film-score'>
+        <text class='score'>{{movie.average}}</text>
+        <view class='film-comment'>
+          <view class='star-container'>
+            <template is="starTemplate" data='{{stars:movie.stars}}' />
+          </view>
+          <view class='comment'>
+            <text>{{movie.collect_count}}人评价</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='info'>
+      <text>{{movie.genres}}</text>
+      <text>{{movie.pubdate}}</text>
+      <text>{{movie.casts}}</text>
+    </view>
+    <view class='btn'>
+      <view>想看</view>
+      <view>看过</view>
+    </view>
+    <view class='intro'>
+      <text class='intro-title'>{{movie.title}}</text>
+      <text class='intro-content'>{{movie.summary}}</text>
+    </view>
+    <view class='comments'>
+      <text class='count'>短评（{{movie.comments_count}}）</text>
+      <block class='comment-list' wx:for='{{movie.comments}}' wx:for-item='item' wx:key='id'>
+        <template is='commentlistTemplate' data='{{...item}}' />
+      </block>
+      <view class='comment-more' catchtap='moreCommentTap' data-mid='{{movie.id}}'>
+        <text>查看更多短评</text>
+      </view>
+    </view>
+  </view>
+</view>

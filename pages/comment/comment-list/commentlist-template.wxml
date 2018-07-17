@@ -1,0 +1,20 @@
+<import src="../../star/star-template.wxml" />
+<template name='commentlistTemplate'>
+  <view class='comment-item'>
+    <view class='desc'>
+      <image class='avatar' src='{{avatar}}'></image>
+      <view class='user-info'>
+        <view class='author'>
+          <text>{{author}}</text>
+        </view>
+        <view class='star-container'>
+          <template is='starTemplate' data='{{stars:stars}}' />
+        </view>
+        <view class='date'>
+          <text>{{date}}</text>
+        </view>
+      </view>
+    </view>
+    <text class='text'>{{content}}</text>
+  </view>
+</template>
